@@ -6,9 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber-report.html", //html report
+        plugin = {"html:target/cucumber-report.html", //html REPORT
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
-                "json:target/cucumber.json"}, // cucumber report
+                "json:target/cucumber.json"}, //  cucumber report
         features = "src/test/resources/features" ,
         glue = "com/cydeo/steps",
          dryRun = false,
